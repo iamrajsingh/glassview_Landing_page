@@ -1,0 +1,58 @@
+.AdsCategory {
+  display: flex;
+  height: 200px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.CategoryTitle {
+  text-align: center;
+  font-size: 35pt;
+  /* padding-top: 10vh; */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  height: 450px;
+  width: 500px;
+  cursor: pointer;
+}
+
+.container {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.CardRightImg{
+  width: 50px;
+  margin: 15px;
+
+}
+
+.CardSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .card{
+    padding: 0;
+  }
+
+  .container{
+    padding-top: 30px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,63 @@
+.TwoColumnSection {
+  height: auto;
+  display: flex;
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+.TwoColumnInner {
+  margin: auto;
+  padding: 50px;
+  width: 70%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  background: whitesmoke;
+}
+
+.twoColumnImg {
+  width: 330px;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.twoColumnCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  margin: 15px;
+  padding: 50px;
+}
+
+@media screen and (max-width: 1449px) {
+  .twoColumnImg {
+    width: 200px;
+    height: auto;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 1061px) {
+  .TwoColumnInner {
+    width: 80%;
+    /* flex-direction: column;
+    align-items: center; */
+  }
+
+  .twoColumnCard {
+    flex-direction: column;
+    width: 100%;
+    /* margin: 15px; */
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .TwoColumnInner {
+    flex-direction: column;
+    align-items: center;
+  }
+}

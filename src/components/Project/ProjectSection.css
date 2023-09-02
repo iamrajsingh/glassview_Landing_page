@@ -1,0 +1,46 @@
+.column {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  float: left;
+  width: 50%;
+  height: 100vh;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.row:after {
+  display: flex;
+  clear: both;
+}
+
+.ProjectTitle {
+  display: flex;
+  position: absolute;
+  top: 75%;
+  color: white;
+  font-size: 38pt;
+}
+
+.ViewProject {
+  position: absolute;
+  top: 85%;
+  color: white;
+  font-size: 20pt;
+}
+
+.btn {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  .ProjectTitle{
+    font-size: 28pt;
+  }
+}
